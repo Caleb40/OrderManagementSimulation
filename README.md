@@ -3,12 +3,12 @@
 
 ## What's This About?
 
-Based off a challenge posted on the ReactJS Devs Group, A challenge was dropped by Ola (@1finedev) as follows:
+Based-off a challenge posted on the ReactJS Devs Group, a challenge was dropped by Ola (@1finedev) as follows:
 
 ## Original Problem Screenshots by @1finedev"
 ![Problem Statement Screenshot 1](./assets/img1.jpg)
 
-# Real World Example (With Typos!)
+# Real World Example
 ![Problem Statement Screenshot 2](./assets/img2.jpg)
 
 **The Premise (Summary)**:  
@@ -29,7 +29,7 @@ The goal is to serve as many customers as possible without overloading the baris
 
 ### Event-Driven Simulation Engine
 - **Priority Event Queue**:  
-  Uses heapq to manage temporal events in chronological order
+  Uses "heapq" to manage temporal events in chronological order
   ```python
   heapq.heappush(event_queue, Event(time, type, data))
   ```
@@ -65,9 +65,9 @@ The goal is to serve as many customers as possible without overloading the baris
 ### Key Workflow
 1. Order arrival triggers event queue processing
 2. System checks all attendant's availability:
-   - Validates status (active/inactive)
-   - Verifies temporal constraints (cooldown period)
-   - Checks concurrent order limit
+   - Validates status (active/inactive).
+   - Verifies temporal constraints (cooldown period).
+   - Checks concurrent order limit.
 3. Selects optimal worker using priority scoring
 4. Updates worker state and schedules completion
 5. Handles order rejection when no workers available
